@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="player.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="applogo.png" type="image/png">
+
+    <!--=============== ICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>
+        Roseaura | Flowers for myself
+    </title>
+</head>
+<body style="background-image: url('bg5 (1).jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME SECTION ====================-->
+        <section class="home section" id="home">
+            <div class="home__container">
+                <img src="bg.jpg" alt="" class="home__bg">
+                <div class="home__shadow"></div>
+                <div class="home__content">
+                    <div class="home__data">
+                        <h2 class="section__title" style="font-size: 3rem;">Roseaura</h2>
+                        <span class="section__subtitle">Playlist, girlhood version.</span>
+                    </div>
+                    <a href="#playlist" class="button">
+                        <span>Playlists</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PLAYLISTS ====================-->
+        <section id="playlist">
+         
+            <nav class="nav">
+                <div class="nav__brand">
+                    <a href="#playlist" class="navl__logo"><h1>Playlists 𝜗ৎ</h1></a>
+                </div>
+            </nav>
+
+            <div class="playlist-grid">
+
+
+                <div class="playlist-item">
+                    <a href="javascript:void(0)" class="image-button" onclick="goToSection('home')">
+                        <img src="homebutton.png" alt="Playlist">
+                    </a>
+
+                </div>
+                <br>
+
+                <!-- Playlist 1 -->
+                <div class="playlist-item">
+                    <a href="javascript:void(0)" class="image-button" onclick="goToSection('songlist1')">
+                        <img src="playlist1.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Summers</p>
+                </div>
+
+
+                <!-- Playlist 2 -->
+                <div class="playlist-item">
+                    <a href="#songlist2" class="image-button" onclick="goToSection('songlist2')">
+                        <img src="playlist2.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Long drive</p>
+                </div>
+
+                <!-- Playlist 3 -->
+                <div class="playlist-item">
+                    <a href="#songlist3" class="image-button" onclick="goToSection('songlist3')">
+                        <img src="playlist3real.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Rosiey</p>
+                </div>
+
+                <!-- Playlist 4 -->
+                <div class="playlist-item">
+                    <a href="#songlist4" class="image-button" onclick="goToSection('songlist4')">
+                        <img src="playlist4.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Olivia</p>
+                </div>
+
+                <!-- Playlist 5 -->
+                <div class="playlist-item">
+                    <a href="#songlist5" class="image-button" onclick="goToSection('songlist5')">
+                        <img src="playlist5.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Taylor's version</p>
+                </div>
+
+
+
+                <!-- Playlist 6 -->
+                <div class="playlist-item">
+                    <a href="#songlist6" class="image-button" onclick="goToSection('songlist6')">
+                        <img src="playlist6.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">MJ</p>
+                </div>
+
+                <!-- Playlist 6 -->
+                <div class="playlist-item">
+                    <a href="#songlist7" class="image-button" onclick="goToSection('songlist7')">
+                        <img src="playlist7new.jpg" alt="Playlist">
+                    </a>
+                    <p class="playlist_name">Beiber fever</p>
+                </div>
+
+
+
+            </div>
+            <img src="playlistboxes.png" alt="Playlist" class="playlistboxes">
+            <img src="musicon.png" alt="Playlist" class="playlistmusic">
+        </section>
+
+
+        <!--==================== song list 2 ====================-->
+        <section class="songs" id="songlist2">
+
+            <div class="songlist-container">
+
+
+
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist2.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Long drive</h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.2.mp3', 'About you', '1975', 'aboutyou.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="aboutyou.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    About you<br>
+                                    <span class="singername">1975</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song2.2.mp3', 'Co2', 'Parteek kuhad', 'co2.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="Co2.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Co2<br>
+                                    <span class="singername">Parteek kuhad</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.2.mp3', 'I think they call this love-cover', 'Matthew Ifeild', 'ithinktheycallthislove.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="ithinktheycallthislove.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    I think they call this love-cover<br>
+                                    <span class="singername">Matthew Ifeild</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.2.mp3', 'The night we met', 'Lord Huron', 'thenightwemet.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="thenightwemet.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    The night we met <br>
+                                    <span class="singername">Lord Huron</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.2.mp3', 'Iris', 'The Goo Goo balls', 'iris.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="iris.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Iris <br>
+                                    <span class="singername">The Goo Goo balls</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+
+        <!--==================== song list 1 ====================-->
+        <section class="songs" id="songlist1">
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist1.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Summers &lt;3</h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.mp4', 'August', 'Taylor\'s Version', 'august.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="august.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    August<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song2" class="songItem-btn" onclick="playTrack('song2.mp3', 'Drop dead', 'Olivia Rodrigo', 'dropdead.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="dropdead.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Drop dead <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song3" class="songItem-btn" onclick="playTrack('song3.mp3', 'The cure', 'Olivia Rodrigo', 'thecure.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="thecure.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    The cure <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song4" class="songItem-btn" onclick="playTrack('song4.mp3', 'Stupid song', 'Olivia Rodrigo', 'stupidsong.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="stupidsong.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Stupid song <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song5" class="songItem-btn" onclick="playTrack('song5.mp3', 'Willow', 'Taylor swift', 'willow.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="willow.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Willow <br>
+                                    <span class="singername">Taylor swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song6" class="songItem-btn" onclick="playTrack('song6.mp3', 'Good goodbye', 'Hawasa', 'goodgoodbye.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="goodgoodbye.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Good goodbye <br>
+                                    <span class="singername">Hawasa</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song7" class="songItem-btn" onclick="playTrack('song7.mp3', 'Summertime sadness', 'Lana del rey', 'Summertimesadness.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="Summertimesadness.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Summertime sadness <br>
+                                    <span class="singername">Lana del rey</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song8" class="songItem-btn" onclick="playTrack('song8.mp3', 'Please Please Please', 'Sabrina Carpenter', 'pleaseplease.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="pleaseplease.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Please Please Please <br>
+                                    <span class="singername">Sabrina Carpenter</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== song list 3 ====================-->
+        <section class="songs" id="songlist3">
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist3.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Rosiey</h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.3.mp3', 'Number one girl', 'rosie', 'songlist3.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="songlist3.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Number one girl<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song2.3.mp3', '3am', 'rosie', '3am.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="songlist3.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    3am<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.3.mp3', 'two years', 'rosie', '3am.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="songlist3.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    two years<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song4.3.mp4', 'viva la vida(cover)', 'rosie', 'vivalavida.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="vivalavida.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    viva la vida(cover)<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song5.3.mp4', 'Look only at me (cover)', 'rosie', 'lookonlyatme.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="lookonlyatme.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Look only at me (cover)<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song6.3.mp4', 'Gone', 'rosie', 'gone.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="gone.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Gone<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song7.3.mp4', 'on the ground', 'rosie', 'gone.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="gone.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    On the ground <br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song8.3.mp4', 'Time passed walking by memories (cover)', 'rosie', 'timepassed.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="timepassed.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Time passed walking by memories(cover) <br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song9.3.mp4', 'if I ain't got u (cover)', 'rosie', 'aintgotu.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="aintgotu.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    if I ain't got u (cover) <br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song10.3.mp4', 'Toxic till the end', 'rosie', '3am.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="3am.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Toxic till the end<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song11.3.mp4', 'Messy', 'rosie', 'messy.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="messy.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Messy<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song12.3.mp4', 'APT', 'rosie & bruno', 'apt.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="apt.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    APT<br>
+                                    <span class="singername">rosie &Aacute; bruno</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song13.3.mp4', 'Call it the end', 'rosie', '3am.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="3am.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Call it the end<br>
+                                    <span class="singername">rosie</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+        </section>
+        <!--==================== song list 4 ====================-->
+        <section class="songs" id="songlist4">
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist4.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Olivia </h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+
+                    <a href="#song2" class="songItem-btn" onclick="playTrack('song2.mp3', 'Drop dead', 'Olivia Rodrigo', 'dropdead.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="dropdead.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Drop dead <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song3" class="songItem-btn" onclick="playTrack('song3.mp3', 'The cure', 'Olivia Rodrigo', 'thecure.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="thecure.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    The cure <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song4" class="songItem-btn" onclick="playTrack('song4.mp3', 'Stupid song', 'Olivia Rodrigo', 'stupidsong.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="stupidsong.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Stupid song <br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song4" class="songItem-btn" onclick="playTrack('song1.4.mp3', 'Honeybee', 'Olivia Rodrigo', 'stupidsong.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="stupidsong.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    honeybee<br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song4" class="songItem-btn" onclick="playTrack('song2.4.mp3', 'what's wrong with me', 'Olivia Rodrigo', 'stupidsong.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="stupidsong.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    What's wrong with me<br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song4" class="songItem-btn" onclick="playTrack('song3.4.mp3', 'Happier', 'Olivia Rodrigo', 'happier.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="happier.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Happier<br>
+                                    <span class="singername">Olivia Rodrigo</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+        </section>
+        <!--==================== song list 5 ====================-->
+
+
+
+
+
+
+        <section class="songs" id="songlist5">
+
+
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+
+                <div class="playlist-banner">
+                    <img src="songlist5.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Taylor's Version </h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.mp4', 'August', 'Taylor\'s Version', 'august.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="august.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    August<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song2" class="songItem-btn" onclick="playTrack('song2.5.mp3', 'Daylight', 'Taylor swift', 'Daylight.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="daylight.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Daylight <br>
+                                    <span class="singername">Taylor swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">03:15 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.5.mp3', 'Lover', 'Taylor swift', 'daylight.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="daylight.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Lover<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song4.5.mp3', 'Fate of ophelia', 'Taylor swift', 'fateofo.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="fateofo.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Fate of ophelia<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song5.5.mp3', 'All too well', 'Taylor swift', 'alltoowell.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="alltoowell.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    All too well<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song6.5.mp3', 'London boy', 'Taylor swift', 'daylight.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="daylight.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    London boy<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song7.5.mp3', 'Delicate', 'Taylor swift', 'delicate.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="delicate.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Delicate<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song8.5.mp3', 'Alchemy', 'Taylor swift', 'alchemy.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="alchemy.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Alchemy<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song9.5.mp3', 'So high school', 'Taylor swift', 'sohighschool.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="sohighschool.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    So high school<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song10.5.mp3', 'Exile', 'Taylor swift', 'august.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="august.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Exile<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song11.5.mp3', 'Love story', 'Taylor swift', 'lovestory.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="lovestory.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Love story<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song12.5.mp3', 'Style', 'Taylor swift', 'style.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="style.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Style<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song12.5.mp3', 'Wildest dreams', 'Taylor swift', 'wildestdreams.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="wildestdreams.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Wildest dreams<br>
+                                    <span class="singername">Taylor Swift</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--==================== song list 6 ====================-->
+        <section class="songs" id="songlist6">
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist6.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">MJ</h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.6.mp3', 'Human nature', 'Micheal Jackson', 'humannature.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="humannature.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Human nature<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song2.6.mp3', 'For all time', 'Micheal Jackson', 'humannature.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="humannature.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    For all time <br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.6.mp3', 'You are my life', 'Micheal Jackson', 'cover1.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover1.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    You are my life <br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song4.6.mp3', 'Speechless', 'Micheal Jackson', 'cover1.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover1.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Speechless <br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song5.6.mp3', 'Heaven can wait', 'Micheal Jackson', 'cover1.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover1.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Heaven can wait <br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song6.6.mp3', 'Rock my world', 'Micheal Jackson', 'cover1.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover1.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Rock my world <br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song7.6.mp3', 'Rock with you', 'Micheal Jackson', 'cover2.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover2.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Rock with you<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song8.6.mp3', 'Don't stop til' you get enough, 'Micheal Jackson', 'cover2.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover2.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Don't stop til' you get enough<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song9.6.mp3', 'Bad', 'Micheal Jackson', 'cover2.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="cover2.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Bad<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song10.6.mp3', 'Bad', 'Micheal Jackson', 'bad.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="bad.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Bad<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song11.6.mp3', 'Bad', 'Micheal Jackson', 'willyoubethere.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="willyoubethere.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Will you there<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song12.6.mp3', 'The way you make me feel', 'Micheal Jackson', 'bad.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="bad.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    The way you make me feel<br>
+                                    <span class="singername">Micheal Jackson </span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+        </section>
+
+
+        <!--==================== SONG SECTION ====================-->
+        <section class="songs" id="song1">
+            <div class="player-container">
+                <img src="playerbg.jpg" alt="" class="home__bg">
+                <div class="home__shadow"></div>
+
+                <div class="music-player">
+                    <nav>
+                        <a href="#songlist1" class="songItem-btnback-btn" onclick="goBackToPlaylist('playlist')">
+                            <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+                        </a>
+                        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+                    </nav>
+
+                    <img src="august.jpg" alt="" class="song-img">
+                    <h1 class="song_name">August</h1>
+                    <p>Taylor's Version</p>
+
+                    <!-- Hidden audio tag -->
+                    <audio id="playlistAudio" controls>
+                        <source src="song1.mp4" type="audio/mp4">
+                    </audio>
+
+                    <div class="controls">
+                        <div><i class="fa-solid fa-backward"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <div><i class="fa-solid fa-forward"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== song list 7 ====================-->
+        <section class="songs" id="songlist7">
+            <div class="songlist-container">
+                <a href="#playlist" class="songItem-btn back-btn" onclick="goBackToPlaylist('playlist')">
+                    <img src="backbutton.png" alt="Playlist Cover" class="backbutton">
+                </a>
+                <div class="playlist-banner">
+                    <img src="songlist7.jpg" alt="Playlist Cover" class="banner-img">
+                    <div class="banner-text-content">
+                        <span class="banner-type">Public Playlist</span>
+                        <h1 class="banner-title">Beiber fever</h1>
+                        <p class="banner-info">Rabi • Selected Tracks</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="songlist-items-wrapper">
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song1.7.mp3', 'Off my face', 'Justin beiber', 'justice.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="justice.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Off my face<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song2.7.mp3', ' Flatline', 'Justin beiber', 'flatline.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="flatline.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Flatline<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song3.7.mp3', ' Hailey', 'Justin beiber', 'hailey.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="hailey.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Hailey<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song4.7.mp3', ' Ghost', 'Justin beiber', 'justice.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="justice.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Ghost<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song5.7.mp3', '  Anyone', 'Justin beiber', 'justice.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="justice.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    Anyone<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#song1" class="songItem-btn" onclick="playTrack('song6.7.mp3', '2 much', 'Justin beiber', 'justice.jpg')">
+                        <div class="songItem">
+                            <div class="songitem-left">
+                                <img src="justice.jpg" alt="Song Art">
+                                <span class="song-title-text">
+                                    2 much<br>
+                                    <span class="singername">Justin Beiber</span>
+                                </span>
+                            </div>
+                            <span class="songlistplay">
+                                <span class="timestamp">05:34 <i class="far fa-play-circle"></i></span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+        </section>
+
+    </main>
+
+    <!--==================== SCRIPTS ====================-->
+    <script>
+        // Navigation Functions
+        function goToSection(sectionId) {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+        targetSection.style.display = 'block';
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+
+        function goBackToPlaylist(sectionId) {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+
+        // Music Player Controls
+        function playPause() {
+        let song = document.getElementById("playlistAudio");
+        let ctrlIcon = document.getElementById("ctrlIcon");
+
+        if (!song || !ctrlIcon) return;
+
+        if (song.paused) {
+        song.play().then(() => {
+        ctrlIcon.classList.remove("fa-play");
+        ctrlIcon.classList.add("fa-pause");
+        }).catch(error => console.log("Playback prevented:", error));
+        } else {
+        song.pause();
+        ctrlIcon.classList.remove("fa-pause");
+        ctrlIcon.classList.add("fa-play");
+        }
+        }
+
+        function playTrack(songFile, songTitle, artistName, imgPath) {
+        const songSection = document.getElementById('song1');
+        if (songSection) {
+        songSection.style.display = 'block';
+
+        document.querySelector('#song1 .song_name').innerText = songTitle;
+        document.querySelector('#song1 .music-player p').innerText = artistName;
+        document.querySelector('#song1 .song-img').src = imgPath;
+
+        let audioPlayer = document.getElementById('playlistAudio');
+        let sourceTag = audioPlayer.querySelector('source');
+
+        sourceTag.src = songFile;
+        audioPlayer.load();
+
+        audioPlayer.play().then(() => {
+        let ctrlIcon = document.getElementById('ctrlIcon');
+        if (ctrlIcon) {
+        ctrlIcon.classList.remove("fa-play");
+        ctrlIcon.classList.add("fa-pause");
+        }
+        }).catch(error => console.log("Playback prevented:", error));
+
+        songSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    </script>
+</body>
+</html>
